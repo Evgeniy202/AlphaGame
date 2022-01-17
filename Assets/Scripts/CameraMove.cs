@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
-    public GameObject player;
-    private Vector3 offset;
+    public Transform playerPosition;
 
-    private void Start()
+    private void FixedUpdate()
     {
-        offset = transform.position - player.transform.position;
-    }
-
-    private void Update()
-    {
-        transform.position = player.transform.position + offset;
+        if (playerPosition.position.y > transform.position.y)
+        {
+            transform.position = new Vector3(transform.position.x, playerPosition.position.y, transform.position.z);
+        }
     }
 }

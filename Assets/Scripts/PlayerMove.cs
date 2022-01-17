@@ -25,7 +25,6 @@ public class PlayerMove : MonoBehaviour
 
     void FixedUpdate()
     {
-        //JumpLogic();
         MovementLogic();
     }
 
@@ -42,12 +41,11 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
-    private void JumpLogic()
+    private void OnCollisionEnter()
     {
-        if (isPlatform)
-        {
+        
             rb.AddForce(Vector2.up * JumpForce);
-        }
+        
     }
 
     void OnCollisionEnter(Collision collision)

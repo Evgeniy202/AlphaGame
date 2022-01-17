@@ -354,7 +354,6 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/CameraMove.cs"
-"Assets/Scripts/PlayerJamp.cs"
 "Assets/Scripts/PlayerMove.cs"
 -langversion:9.0
 

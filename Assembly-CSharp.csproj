@@ -55,6 +55,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\CameraMove.cs" />
+    <Compile Include="Assets\Scripts\PlatformSpawnPosition.cs" />
+    <Compile Include="Assets\Scripts\PlatformSpawn.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

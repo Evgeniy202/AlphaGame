@@ -11,8 +11,6 @@ public class PlayerMove : MonoBehaviour
     public float JumpForce;
     public Rigidbody rb;
 
-    private bool isPlatform;
-
     void Start()
     {
         if (instance == null)
@@ -33,34 +31,14 @@ public class PlayerMove : MonoBehaviour
         rb.AddForce(direction.normalized * force);
     }
 
-    private void IsGroundedUpate(Collision collision, bool value)
-    {
-        if ((collision.gameObject.tag == "Platform") || (collision.gameObject.tag == "StandartPlatform"))
-        {
-            isPlatform = value;
-        }
-    }
-
     private void OnCollisionEnter()
-    {
-        
-            rb.AddForce(Vector2.up * JumpForce);
-        
-    }
-
-    void OnCollisionEnter(Collision collision)
-    {
-        IsGroundedUpate(collision, true);
-    }
-
-    void OnCollisionExit(Collision collision)
-    {
-        IsGroundedUpate(collision, false);
+    {      
+        rb.AddForce(Vector2.up * JumpForce);     
     }
 
     public void OnLeftBtnDown()
     {
-        direction.x -= force;
+        direction.x -= force;  
     }
 
     public void OnRightBtnDown()

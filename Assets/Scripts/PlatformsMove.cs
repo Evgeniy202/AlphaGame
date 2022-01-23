@@ -2,38 +2,47 @@ using UnityEngine;
 
 public class PlatformsMove : MonoBehaviour
 {
-    public static bool collisions;
-    public Vector2 direction;
-    public Rigidbody body;
-
+    private Vector3 targetPoint;
     private float speed;
+    private float posX;
 
     private void Start()
     {
-        speed = Random.Range(1f, 20f);
-        body = GetComponent<Rigidbody>();
-        collisions = false;
+        int var = Random.Range(1, 2);
+        if (var == 1)
+        {
+            posX = 19.5f;
+        }
+        else if (var == 2)
+        {
+            posX = -19.5f;
+        }
+
+        targetPoint = new Vector3(posX, transform.position.y, 15f);
+        speed = Random.Range(0.04f, 0.1f); 
     }
 
     private void FixedUpdate()
     {
-        MovementLogic();
+        Direction();
+        MoveObj();
+        targetPoint = new Vector3(posX, transform.position.y, 15f);
     }
 
-    private void MovementLogic()
+    private void Direction()
     {
-        body.AddForce(direction.normalized * speed);
+        if (transform.position.x >= 19)
+        {
+            posX = -19.5f;
+        }
+        else if (transform.position.x <= -19)
+        {
+            posX = 19.5f;
+        }
     }
 
-    private void OnLeft(Collider collision)
+    private void MoveObj()
     {
-        if (collision.gameObject.tag == "BorderLeft")
-        {
-            direction.x -= speed;
-        }
-        else if (collision.gameObject.tag == "BorderRight")
-        {
-            direction.x = speed;
-        }
+        transform.position = Vector3.MoveTowards(transform.position, targetPoint, speed);
     }
 }

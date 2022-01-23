@@ -9,7 +9,7 @@ public class PlayerMove : MonoBehaviour
     public Vector2 direction;
     public float force;
     public float JumpForce;
-    public Rigidbody rb;
+    private Rigidbody rb;
 
     void Start()
     {

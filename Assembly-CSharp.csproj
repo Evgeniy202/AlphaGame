@@ -53,12 +53,12 @@
     <UnityVersion>2022.1.0b2</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\PlatformSpawnPosition.cs" />
+    <Compile Include="Assets\Scripts\PlatformsMove.cs" />
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\PlatformSpawn.cs" />
-    <Compile Include="Assets\Scripts\CameraMove.cs" />
     <Compile Include="Assets\Scripts\BorderPosition.cs" />
-    <Compile Include="Assets\Scripts\PlatformsMove.cs" />
+    <Compile Include="Assets\Scripts\CameraMove.cs" />
+    <Compile Include="Assets\Scripts\BorderBottom.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

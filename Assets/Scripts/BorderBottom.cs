@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class BorderBottom : MonoBehaviour
 {
-    private void OnCollisionExit(Collision collision)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.name == "BorderBottom")
+        if (collision.gameObject.name == "DestroyZone")
         {
             float RandX = Random.Range(-18f, 18f);
             float RandY = Random.Range(transform.position.y + 55f, transform.position.y + 70f);

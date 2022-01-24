@@ -54,11 +54,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlatformsMove.cs" />
+    <Compile Include="Assets\Scripts\BorderBottom.cs" />
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\PlatformSpawn.cs" />
     <Compile Include="Assets\Scripts\BorderPosition.cs" />
     <Compile Include="Assets\Scripts\CameraMove.cs" />
-    <Compile Include="Assets\Scripts\BorderBottom.cs" />
+    <Compile Include="Assets\Scripts\DestroyZone.cs" />
+    <Compile Include="Assets\Scripts\Restsrt.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

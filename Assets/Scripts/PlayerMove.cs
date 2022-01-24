@@ -31,9 +31,12 @@ public class PlayerMove : MonoBehaviour
         rb.AddForce(direction.normalized * force);
     }
 
-    private void OnCollisionEnter()
-    {      
-        rb.AddForce(Vector2.up * JumpForce);     
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag != "Border")
+        {
+            rb.AddForce(Vector2.up * JumpForce);
+        }   
     }
 
     public void OnLeftBtnDown()

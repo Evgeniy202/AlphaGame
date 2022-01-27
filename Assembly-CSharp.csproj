@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>9.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,14 +53,17 @@
     <UnityVersion>2022.1.0b2</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="D:\VS\IDE\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Scripts\DestroyZone.cs" />
     <Compile Include="Assets\Scripts\PlatformsMove.cs" />
+    <Compile Include="Assets\Scripts\Restsrt.cs" />
     <Compile Include="Assets\Scripts\BorderBottom.cs" />
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\PlatformSpawn.cs" />
     <Compile Include="Assets\Scripts\BorderPosition.cs" />
     <Compile Include="Assets\Scripts\CameraMove.cs" />
-    <Compile Include="Assets\Scripts\DestroyZone.cs" />
-    <Compile Include="Assets\Scripts\Restsrt.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

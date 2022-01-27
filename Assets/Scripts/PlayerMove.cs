@@ -28,7 +28,18 @@ public class PlayerMove : MonoBehaviour
 
     private void MovementLogic()
     {
-        rb.AddForce(direction.normalized * force);
+        if ((rb.position.x < 22f) && (rb.position.x > -22f))
+        {
+            rb.AddForce(direction.normalized * force);
+        }
+        else if ((rb.position.x >= -21f))
+        {
+            rb.position = new Vector3(20f, rb.position.y, 15f);
+        }
+        else if ((rb.position.x <= 21f))
+        {
+            rb.position = new Vector3(-20f, rb.position.y, 15f);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)

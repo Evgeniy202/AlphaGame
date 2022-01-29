@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\DestroyZone.cs" />
+    <Compile Include="Assets\Scripts\Result.cs" />
     <Compile Include="Assets\Scripts\PlatformsMove.cs" />
     <Compile Include="Assets\Scripts\Restsrt.cs" />
     <Compile Include="Assets\Scripts\BorderBottom.cs" />

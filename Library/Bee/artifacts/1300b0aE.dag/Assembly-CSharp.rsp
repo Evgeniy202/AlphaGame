@@ -361,6 +361,7 @@
 "Assets/Scripts/PlatformSpawn.cs"
 "Assets/Scripts/PlayerMove.cs"
 "Assets/Scripts/Restsrt.cs"
+"Assets/Scripts/Result.cs"
 -langversion:9.0
 
 /deterministic

@@ -32,11 +32,11 @@ public class PlayerMove : MonoBehaviour
         {
             rb.AddForce(direction.normalized * force);
         }
-        else if ((rb.position.x >= -21f))
+        else if ((rb.position.x >= -22f))
         {
             rb.position = new Vector3(20f, rb.position.y, 15f);
         }
-        else if ((rb.position.x <= 21f))
+        else if ((rb.position.x <= 22f))
         {
             rb.position = new Vector3(-20f, rb.position.y, 15f);
         }

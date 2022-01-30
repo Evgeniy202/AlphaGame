@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class Result : MonoBehaviour
 {
-    public float point = 0;
+    public int point = 0;
     public Text pointsText;
     public Rigidbody rb;
 
@@ -17,8 +17,11 @@ public class Result : MonoBehaviour
     {
         if (rb)
         {
-            point = rb.position.y;
-            pointsText.text = Mathf.Round(point).ToString();    
+            if (point < rb.position.y)
+            {
+                point = (int)rb.position.y;
+                pointsText.text = Mathf.Round(point).ToString();
+            } 
         }
     }
 }

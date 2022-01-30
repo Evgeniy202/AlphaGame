@@ -541,6 +541,7 @@ GameObject:
   - component: {fileID: 613153932}
   - component: {fileID: 613153933}
   - component: {fileID: 613153934}
+  - component: {fileID: 613153935}
   m_Layer: 0
   m_Name: RegularPlatform
   m_TagString: Platform
@@ -666,6 +667,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b57e4280a247b747b5059c27fc2a56f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &613153935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613153927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44005bd653355884f86822d0b08bafe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  body: {fileID: 2002039232}
+  platform: {fileID: 613153933}
+  jumpForce: 800
 --- !u!1 &619198613
 GameObject:
   m_ObjectHideFlags: 0
@@ -1051,6 +1067,8 @@ GameObject:
   - component: {fileID: 1592416454}
   - component: {fileID: 1592416453}
   - component: {fileID: 1592416457}
+  - component: {fileID: 1592416459}
+  - component: {fileID: 1592416458}
   m_Layer: 0
   m_Name: Platform
   m_TagString: Untagged
@@ -1153,6 +1171,37 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   priority: 0
+--- !u!54 &1592416458
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592416452}
+  serializedVersion: 2
+  m_Mass: 5
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!114 &1592416459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592416452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44005bd653355884f86822d0b08bafe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  body: {fileID: 2002039232}
+  platform: {fileID: 1592416458}
+  jumpForce: 800
 --- !u!1 &1690963795
 GameObject:
   m_ObjectHideFlags: 0

@@ -42,14 +42,6 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag != "Border")
-        {
-            rb.AddForce(Vector2.up * JumpForce);
-        }   
-    }
-
     public void OnLeftBtnDown()
     {
         direction.x -= force;  

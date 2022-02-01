@@ -7,7 +7,7 @@ public class Restsrt : MonoBehaviour
     {
         if (collision.gameObject.name == "DestroyZone")
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
     }
 }

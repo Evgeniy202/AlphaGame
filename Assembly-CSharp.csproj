@@ -57,12 +57,13 @@
     <Compile Include="Assets\Scripts\Result.cs" />
     <Compile Include="Assets\Scripts\PlatformsMove.cs" />
     <Compile Include="Assets\Scripts\Restsrt.cs" />
+    <Compile Include="Assets\Scripts\playerJump.cs" />
     <Compile Include="Assets\Scripts\BorderBottom.cs" />
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\PlatformSpawn.cs" />
     <Compile Include="Assets\Scripts\BorderPosition.cs" />
     <Compile Include="Assets\Scripts\CameraMove.cs" />
-    <Compile Include="Assets\Scripts\playerJump.cs" />
+    <Compile Include="Assets\Scripts\StartGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

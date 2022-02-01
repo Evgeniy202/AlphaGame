@@ -363,6 +363,7 @@
 "Assets/Scripts/PlayerMove.cs"
 "Assets/Scripts/Restsrt.cs"
 "Assets/Scripts/Result.cs"
+"Assets/Scripts/StartGame.cs"
 -langversion:9.0
 
 /deterministic

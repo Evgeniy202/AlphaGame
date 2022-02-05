@@ -357,6 +357,7 @@
 "Assets/Scripts/BorderPosition.cs"
 "Assets/Scripts/CameraMove.cs"
 "Assets/Scripts/DestroyZone.cs"
+"Assets/Scripts/Pause.cs"
 "Assets/Scripts/PlatformsMove.cs"
 "Assets/Scripts/PlatformSpawn.cs"
 "Assets/Scripts/playerJump.cs"

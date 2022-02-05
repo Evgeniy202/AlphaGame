@@ -11,7 +11,7 @@ public class PlatformSpawn : MonoBehaviour
         for (int i = 0; i < 20; i++)
         {
             spawnPos.x = Random.Range(-18f, 18f);
-            spawnPos.y += Random.Range(2.5f, 5f);
+            spawnPos.y += Random.Range(2.5f + 1, 5f + 1);
             spawnPos.z = 15f;
 
             Instantiate(platform, spawnPos, Quaternion.identity);

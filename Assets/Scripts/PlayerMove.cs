@@ -44,7 +44,7 @@ public class PlayerMove : MonoBehaviour
 
     public void OnLeftBtnDown()
     {
-        direction.x -= force;  
+        direction.x -= force;
     }
 
     public void OnRightBtnDown()

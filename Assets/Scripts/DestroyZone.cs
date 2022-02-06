@@ -17,7 +17,7 @@ public class DestroyZone : MonoBehaviour
     {
         if (playerPosition.position.y > transform.position.y)
         {
-            transform.position = new Vector3(transform.position.x, playerPosition.position.y - 20f, transform.position.z);
+            transform.position = new Vector3(transform.position.x, playerPosition.position.y - 23f, transform.position.z);
         }
     }
 }

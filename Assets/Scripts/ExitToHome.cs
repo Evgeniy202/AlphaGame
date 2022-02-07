@@ -5,6 +5,6 @@ public class ExitToHome : MonoBehaviour
 {
     public void OnButtonToHomeDown()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 }

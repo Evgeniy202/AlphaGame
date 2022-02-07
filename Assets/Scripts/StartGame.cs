@@ -5,6 +5,7 @@ public class StartGame : MonoBehaviour
 {
     public void OnMouseDown()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
+        Time.timeScale = 1;
     }
 }
